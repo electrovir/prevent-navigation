@@ -1,3 +1,5 @@
+/* node:coverage disable */
+
 import {randomString} from '@augment-vir/common';
 import {css, defineElementNoInputs, html, listen} from 'element-vir';
 import {CloseX24Icon, ViraIcon, noNativeSpacing} from 'vira';
@@ -7,7 +9,7 @@ import {
     isNavigationBlocked,
     preventNavigation,
     resetAllNavigationBlockers,
-} from '../../index';
+} from '../../index.js';
 
 export const VirApp = defineElementNoInputs({
     tagName: 'vir-app',
@@ -62,7 +64,7 @@ export const VirApp = defineElementNoInputs({
     stateInitStatic: {
         blockedIds: [] as string[],
     },
-    renderCallback({state, updateState}) {
+    render({state, updateState}) {
         const blockersTemplate = state.blockedIds.map((blockedId) => {
             return html`
                 <div class="blocker">

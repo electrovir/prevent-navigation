@@ -17,7 +17,7 @@ You can quickly and simply block navigation without any smartness by calling `pr
 <!-- example-link: src/readme-examples/prevention-basic.example.ts -->
 
 ```TypeScript
-import {preventNavigation} from '../index';
+import {preventNavigation} from 'prevent-navigation';
 
 preventNavigation();
 ```
@@ -27,7 +27,7 @@ For smarter prevention or preventing in multiple places, pass in id strings:
 <!-- example-link: src/readme-examples/prevention-by-id.example.ts -->
 
 ```TypeScript
-import {preventNavigation} from '../index';
+import {preventNavigation} from 'prevent-navigation';
 
 preventNavigation('user-form-1');
 
@@ -45,7 +45,7 @@ Re-enable navigation with `allowNavigation`:
 <!-- example-link: src/readme-examples/allowance-basic.example.ts -->
 
 ```TypeScript
-import {allowNavigation} from '../index';
+import {allowNavigation} from 'prevent-navigation';
 
 allowNavigation();
 ```
@@ -55,7 +55,7 @@ It can also be used with ids:
 <!-- example-link: src/readme-examples/allowance-by-id.example.ts -->
 
 ```TypeScript
-import {allowNavigation} from '../index';
+import {allowNavigation} from 'prevent-navigation';
 
 allowNavigation('user-form-1');
 
@@ -71,7 +71,7 @@ allowNavigation('user-form-5');
 <!-- example-link: src/readme-examples/checking.example.ts -->
 
 ```TypeScript
-import {getNavigationBlockerIds, isNavigationBlocked} from '../index';
+import {getNavigationBlockerIds, isNavigationBlocked} from 'prevent-navigation';
 
 /** Get all the ids currently blocking navigation (if any). */
 getNavigationBlockerIds();

@@ -1,3 +1,3 @@
-import {allowNavigation} from '../index';
+import {allowNavigation} from '../index.js';
 
 allowNavigation();

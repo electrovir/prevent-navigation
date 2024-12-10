@@ -1,4 +1,4 @@
-import {preventNavigation} from '../index';
+import {preventNavigation} from '../index.js';
 
 preventNavigation('user-form-1');
 
