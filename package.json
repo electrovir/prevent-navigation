@@ -1,6 +1,6 @@
 {
     "name": "prevent-navigation",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Easily prevent and enable page navigation from multiple sources and keep track of those sources.",
     "keywords": [],
     "homepage": "https://github.com/electrovir/prevent-navigation",
